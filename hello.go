@@ -1,11 +1,8 @@
-package main
+package main //声明本文件的package名
 
-import "fmt"
-
-func 飞_test() {
-    fmt.Println("00000000000000000")
-}
+import "fmt" //import语言的fmt库——用于输出
 
 func main() {
-    飞_test()
+	fmt.Println("hello world")
+
 }
