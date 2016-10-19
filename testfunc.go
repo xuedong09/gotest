@@ -30,7 +30,7 @@ func nextNum() func() int {
 		return tmp
 	}
 }
-
+/*
 func main() {
 
 	fmt.Println("max of 1 and 2: ", max(1, 2))
@@ -43,3 +43,4 @@ func main() {
 	}
 
 }
+*/

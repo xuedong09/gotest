@@ -9,7 +9,7 @@ var c int
 func main() {
 	//runtime.GOMAXPROCS(10)
 	defer Println("defer==========")
-	Println("0000000", c)
+	Println("0000000", max(1, 33))
 	Println(runtime.GOMAXPROCS(10), runtime.NumCPU())
 	Println(runtime.GOMAXPROCS(0), runtime.NumCPU())
 
