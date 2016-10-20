@@ -10,6 +10,9 @@ func main() {
 	m["one"] = 1
 	m["two"] = 2
 	m["three"] = 3
+	n := make(map[string]int)
+	x, ok := n["test"]
+	fmt.Println("check ok-idiom mode", x, ok)
 
 	fmt.Println(m)
 	fmt.Println("len: ", len(m))

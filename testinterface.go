@@ -52,6 +52,22 @@ func (c *circle) perimeter() float64 {
 	return 2 * math.Pi * c.radius
 }
 
+
+type user struct{
+
+	name string
+	age byte
+}
+
+func (u user)Print() string {
+	return fmt.Sprintf("======%+v", u)
+}
+
+type Printer interface {
+
+	Print() string
+}
+
 func main() {
 
 	str := "abc"
@@ -70,4 +86,13 @@ func main() {
 		fmt.Println("area: ", sh.area())
 		fmt.Println("perimeter: ", sh.perimeter())
 	}
+
+	var u user
+	u.name = "Tom"
+	u.age = 12
+
+	var p Printer
+	p = u
+	fmt.Println(p.Print())
+
 }
