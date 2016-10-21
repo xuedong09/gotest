@@ -25,4 +25,9 @@ func main() {
 	fmt.Printf("s1: %s\n", s1)
 	fmt.Printf("pi: %f\n", pi)
 	fmt.Printf("test end!\n")
+	var na float64 = 1.1234567899
+	var nb float64 = 1.12345678
+	var nc float64 = 1.123456781
+
+	fmt.Println(na==nb, na==nc)
 }
